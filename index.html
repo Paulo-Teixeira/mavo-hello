@@ -11,7 +11,24 @@
 </head>
 
 <body>
+  <div mv-app="commentForm" mv-storage="local" mv-autosave="0">
+    <label>
+      Email:
+      <input type="email" property="email" value="me@example.com">
+    </label>
+    <label>
+      Message:
+      <textarea property="message">
+        Notice the values persist when you refresh the page !
+      </textarea>
+    </label>
+  </div>
 
+  <div mv-app="nameDemo" mv-storage="local">
+    Name:
+    <span property="firstName">Paulo</span>
+    <span property="lastName">Teixeira</span>
+  </div>
 </body>
 
 </html>
